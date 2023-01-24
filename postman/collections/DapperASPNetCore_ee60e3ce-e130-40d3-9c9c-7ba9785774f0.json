@@ -321,6 +321,20 @@
 				},
 				{
 					"name": "/api/companies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59bb1943-fc15-4166-90ab-5703b9b0e560",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "a4cdbe67-da2c-45ee-ac07-2685f0d454ec",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
